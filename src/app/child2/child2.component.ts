@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CounterService } from '../counter.service';
 
 @Component({
   selector: 'app-child2',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './child2.component.css'
 })
 export class Child2Component {
-
+  constructor(public counterService: CounterService) { }
 }
