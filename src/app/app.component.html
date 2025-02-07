@@ -1,9 +1,19 @@
-<div style="text-align:center;">
-  <h1>{{ title }}</h1>
-  
-  <button (click)="increment()">Increment</button>
-  <button (click)="decrement()">Decrement</button>
-  
+<mat-toolbar color="primary">
+  <span>Angular Signals Counter (Finn De Bie - S00238716)</span>
+</mat-toolbar>
+
+<div class="container">
+  <mat-card class="counter-card">
+    <mat-card-content>
+      <h2>Counter Controls</h2>
+      <div class="buttons">
+        <button mat-raised-button color="primary" (click)="increment()">Increment</button>
+        <button mat-raised-button color="warn" (click)="decrement()">Decrement</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
   <app-child1></app-child1>
   <app-child2></app-child2>
 </div>
+
